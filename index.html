@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Payment Gateway</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body onload="fetchIssues()">
+    <div class="container">
+      
+      <h1>Regent Form </h1>
+      <div class="jumbotron">
+        
+        <form id="serviceInputForm">
+          <div class="form-group">
+            <label for="username">Name</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Email">
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter your Number">
+          </div>
+         
+
+          <h3>Services <small style="font-size: 14px; color: green"> You can select multiple services</small></h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="editing">
+                    <label class="form-check-label" for="exampleCheck1">Editing<span style="color: red"> ( Price: $100 )</span></label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input"  id="proofreading">
+                    <label class="form-check-label" for="exampleCheck1">Proofreading<span style="color: red"> ( Price: $200 )</span></label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="formatting">
+                    <label class="form-check-label" for="exampleCheck1">Formatting<span style="color: red"> ( Price: $500 )</span></label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" class="form-control" id="price" placeholder="Enter Price value">
+                  </div>
+
+
+          
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="col-lg-12">
+        <div id="issuesList">
+        </div>
+      </div>
+     
+    </div>
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+
+    <script src="chance.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
