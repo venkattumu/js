@@ -1,1 +1,1 @@
-#This is the project with payment with javascript
+#This is the project with payment gateway with javascript
